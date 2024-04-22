@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">
+      Formulário
+    </h1>
+
+    <p id="description">
+      Simulação de formulário. Projecto de Francisco Vieira.
+    </p>
+
+    <form id="survey-form">
+      <fieldset class="aboutYou">
+        <legend>Conte-nos mais sobre si:</legend>
+        <label id="name-label">Nome</label>    
+        <input type="text" id="name" placeholder="name" required></input>
+        <label id="email-label">Email</label>
+        <input type="email" id="email" placeholder="email" required></input>
+        <label id="number-label">Idade (optional) </label>      
+        <input type="number" id="number" placeholder="age" min="10" max="100"></input>
+      </fieldset>
+
+      <fieldset class="heardAboutUs">
+        <legend>Como ouviu falar de nós?</legend>
+        <select id="dropdown">
+            <option>Escolha uma opção:</option>
+            <option>amigos / família</option>
+            <option>redes sociais</option>
+            <option>TV</option>
+            <option>Internet</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="contact">
+        <legend>O nosso contacto foi realizado presencialmente, por telefone ou email?</legend>
+        <div class="contacttype">
+            <input type="radio" name="value" value="option"> Presencialmente
+            <input type="radio" name="value" value="option"> Telefone
+            <input type="radio" name="value" value="option"> Email
+        </div>
+      </fieldset>
+
+      <fieldset class="service">
+        <legend>Como avalia o nosso serviço?</legend>
+        <div>
+            <input type="checkbox" value="choice">1</input>
+            <input type="checkbox" value="choice">2</input>
+            <input type="checkbox" value="choice">3</input>
+            <input type="checkbox" value="choice">4</input>
+            <input type="checkbox" value="choice">5</input>
+        </div>
+      </fieldset>
+      <fieldset class="">
+        <legend>Questões, comentários ou sugestões? Deixe-nos o seu feedback!</legend>
+        <textarea></textarea>
+      </fieldset>
+      
+      <button id="submit" type="submit">Enviar</button>
+      
+      
+    </form>
+
+  </body>
+</html>
