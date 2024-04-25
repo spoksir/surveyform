@@ -64,6 +64,12 @@ button {
     padding: 15px 10%;
     border-radius: 10px;
 }
+
+button:hover {
+    background-color: #0F5897;
+    border: 1px solid #0F5897;
+    cursor: pointer;
+  }
 input, textarea {
     background-color: #272535;
     border: 1px solid #0a0a23;
